@@ -4,9 +4,17 @@
             <div class="sb-sidenav-menu">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Core</div>
-                    <a class="nav-link" href="index.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <a class="nav-link" [routerLink]="'/Dashboard'">
+                        <div class="sb-nav-link-icon"><i class="bi bi-motherboard"></i></div>
                         Dashboard
+                    </a>
+                    <a class="nav-link" [routerLink]="'/one'">
+                        <div class="sb-nav-link-icon"><i class="bi bi-file-earmark-binary-fill"></i></div>
+                        Page One
+                    </a>
+                    <a class="nav-link" [routerLink]="'/two'">
+                        <div class="sb-nav-link-icon"><i class="bi bi-file-earmark-medical"></i></div>
+                        Page Two
                     </a>
                     <div class="sb-sidenav-menu-heading">Interface</div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
@@ -79,7 +87,7 @@
         </nav>
     </div>
     <div id="layoutSidenav_content">
-        <app-deshboard></app-deshboard>
+        <router-outlet></router-outlet>
         <app-footer></app-footer>
     </div>
 </div>
